@@ -10,7 +10,6 @@ a = 10
 x = 34
 
 subprocess.Popen(r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe")
-# searches 34 times; gets max points
 time.sleep(5)
 while x > 0:
     pyautogui.hotkey("ctrl", "t")
@@ -35,7 +34,8 @@ pyautogui.press("enter")
 time.sleep(1)
 pyautogui.hotkey("f12")
 time.sleep(2)
-button7location = pyautogui.locateOnScreen(r'C:\Users\Atharv\Documents\My stuff\screenshots\searchfind.png')
+#IF NEEDED ADD ABSOLUTE PATH OF IMAGE IN THE LINE BELOW
+button7location = pyautogui.locateOnScreen(r'searchfind.png')
 print(button7location)
 button7point = pyautogui.center(button7location)
 button7x, button7y = button7point
@@ -46,7 +46,8 @@ while b > 0:
 b = 5
 pyautogui.press("enter")
 time.sleep(2)
-button2location = pyautogui.locateOnScreen(r'C:\Users\Atharv\Documents\My stuff\screenshots\phase2finder.png')
+#IF NEEDED ADD ABSOLUTE PATH OF IMAGE IN THE LINE BELOW
+button2location = pyautogui.locateOnScreen(r'phase2finder.png')
 button2point = pyautogui.center(button2location)
 print(button2point)
 while c > 0:
